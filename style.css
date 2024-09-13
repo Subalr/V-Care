@@ -1,0 +1,104 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Container and content styling */
+.book-now-section {
+    background: linear-gradient(to bottom, #fff, #a8d1f1); /* Blue gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.book-now-section .container {
+    max-width: 1000px;
+}
+
+.book-now-section .content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-now-section .dog-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.book-now-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.book-now-section p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.book-now-section .btn-book-now {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-now-section .btn-book-now:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .book-now-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .book-now-section p {
+        font-size: 0.9rem;
+    }
+
+    .book-now-section .btn-book-now {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+
+    .book-now-section .dog-logo {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-now-section h1 {
+        font-size: 1.4rem;
+    }
+
+    .book-now-section p {
+        font-size: 0.85rem;
+    }
+
+    .book-now-section .btn-book-now {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+
+    .book-now-section .dog-logo {
+        width: 60px;
+    }
+}
